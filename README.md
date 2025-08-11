@@ -1,4 +1,4 @@
-Creating a simple web 2 tier web application from 2 containers [WebApp, and Redis] using Docker Compose
+Creating a simple web 2 tier web application from 2 containers [WebApp, and Redis] using Docker Compose.
 The application utilizes the Flask Python framework to build a web application that counts the number of visits to a website.
 Redis database is used for the database tier to keep track of the counter
 The High Level Design for this web application architecture is below with description:
