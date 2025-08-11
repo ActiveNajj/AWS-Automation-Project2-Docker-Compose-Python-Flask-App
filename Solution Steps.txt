@@ -1,0 +1,23 @@
+########## Project2 Solution Steps ########## 
+Step 1: Create a new EC2 instance on AWS.
+Step 2: Configure the EC2 instance Security Group to allow SSH access from your local machine, and allow HTTP/HTTPS access from the internet.
+Step 3: SSH into the EC2 instance.
+Step 4: Install Docker on the EC2 instance.
+Step 5: Create a new project directory on the EC2 instance:-
+    $ mkdir project
+    $ cd project/
+Step 5: Create the flask app.py file in the project directory and add the source code for the flask app.py:-
+    $ vim app.py
+Step 6: Create the Dockerfile in the project directory and add the source code for the Dockerfile and add the source code for the Dockerfile:-
+    $ vim Dockerfile
+Step7: Create the requirement.txt file in the project directory and add the source code for it.
+    $ vim requirements.txt
+Step 8: Create the docker-compose.yml file in the project directory and add the source code for it.
+    $ vim docker-compose.yml
+Step 9: Build the Docker image using the docker-compose build command.
+    $ docker-compose build
+Step 10: Start the Docker containers using the docker-compose up command.
+    $ docker-compose up -d
+Step 11: Open the web browser and navigate to http://EC2-instance-IP-localhost/publicIP:9000 to see the Flask web application running on the EC2 instance.
+Step 12: Stop the Docker containers using the docker-compose down command.
+    $ docker-compose down --volume --rmi all
